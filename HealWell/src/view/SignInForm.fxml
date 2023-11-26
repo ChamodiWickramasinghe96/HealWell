@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.SignInFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="signInPaneContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignInFormController">
+   <children>
+      <AnchorPane layoutX="306.0" prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="438.0" fitWidth="326.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/images/medical_bg_img.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="440.0" prefWidth="300.0" styleClass="backgroundColor" stylesheets="@../css/style.css">
+         <children>
+            <Label layoutX="83.0" layoutY="36.0" text="Hello, There. Welcome to" textFill="#4a4a4a">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <ImageView fitHeight="93.0" fitWidth="200.0" layoutX="59.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/logos/healWell_Logo.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="tf_UserName" focusColor="#2980b9" labelFloat="true" layoutX="33.0" layoutY="188.0" prefHeight="25.0" prefWidth="235.0" promptText="Enter User Name" />
+            <JFXTextField fx:id="tf_Password" focusColor="#2980b9" labelFloat="true" layoutX="33.0" layoutY="245.0" prefHeight="25.0" prefWidth="235.0" promptText="Enter Password" />
+            <JFXButton fx:id="btn_SignIn" layoutX="33.0" layoutY="305.0" onAction="#signInOnAction" prefHeight="25.0" prefWidth="235.0" style="-fx-background-color: #3498db; -fx-background-radius: 10px;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="89.0" layoutY="139.0" text="Sign In, Here" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

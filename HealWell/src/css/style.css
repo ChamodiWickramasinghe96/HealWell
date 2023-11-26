@@ -1,0 +1,14 @@
+.backgroundColor{
+    -fx-background-color: linear-gradient(to bottom,#7f8c8d,#bdc3c7);
+}
+.jfx-date-picker > .jfx-text-field {
+    -jfx-label-float: true;
+}
+
+.resetButtonColor{
+    -fx-background-color: linear-gradient(to left,#EA2027,#ED4C67);
+}
+
+.focus-color{
+    -fx-focus-color: linear-gradient(to left,#D980FA,#9980FA);
+}
