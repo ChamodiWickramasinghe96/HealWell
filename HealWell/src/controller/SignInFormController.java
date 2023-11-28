@@ -17,8 +17,8 @@ public class SignInFormController {
     public JFXTextField tf_Password;
     public JFXButton btn_SignIn;
 
-    public void signInOnAction(ActionEvent actionEvent) {
-
+    public void signInOnAction(ActionEvent actionEvent) throws IOException {
+        setUI("DashboardForm");
     }
 
     public void setUI(String location) throws IOException {
